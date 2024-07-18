@@ -1,0 +1,162 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getAllValidatorInfo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "totalValidatorCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "totalStakedCoins",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					},
+					{
+						"internalType": "enum InterfaceValidator.Status[]",
+						"name": "",
+						"type": "uint8[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_staker",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_validator",
+						"type": "address"
+					}
+				],
+				"name": "getStakingTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "validatorAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "validatorSpecificInfo2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "totalStakedCoins",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum InterfaceValidator.Status",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "selfStakedCoins",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "masterVoters",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "stakers",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"JaiHo/system-contracts/Staking.sol": "InterfaceValidator"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"JaiHo/system-contracts/Staking.sol": {
+			"keccak256": "0x76c70f3d79c68e3005420228d257956b725fc455d9b709c4d2d502793044ba8c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://570643c1e9de5d515cb413ceef450b9665b1f277b94589526070d5bd9f6a2754",
+				"dweb:/ipfs/QmfCcsCPREDAer8qZSg9CE89MwrVCo3jJySrtikLLh6JEq"
+			]
+		}
+	},
+	"version": 1
+}

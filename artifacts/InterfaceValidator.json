@@ -1,0 +1,175 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"getAllValidatorInfo()": "3f8dc65a",
+			"getStakingTime(address,address)": "d0744e3d",
+			"validatorSpecificInfo2(address,address)": "64877981"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [],
+			"name": "getAllValidatorInfo",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "totalValidatorCount",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "totalStakedCoins",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address[]",
+					"name": "",
+					"type": "address[]"
+				},
+				{
+					"internalType": "enum InterfaceValidator.Status[]",
+					"name": "",
+					"type": "uint8[]"
+				},
+				{
+					"internalType": "uint256[]",
+					"name": "",
+					"type": "uint256[]"
+				},
+				{
+					"internalType": "string[]",
+					"name": "",
+					"type": "string[]"
+				},
+				{
+					"internalType": "string[]",
+					"name": "",
+					"type": "string[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_staker",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_validator",
+					"type": "address"
+				}
+			],
+			"name": "getStakingTime",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "validatorAddress",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "user",
+					"type": "address"
+				}
+			],
+			"name": "validatorSpecificInfo2",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "totalStakedCoins",
+					"type": "uint256"
+				},
+				{
+					"internalType": "enum InterfaceValidator.Status",
+					"name": "status",
+					"type": "uint8"
+				},
+				{
+					"internalType": "uint256",
+					"name": "selfStakedCoins",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "masterVoters",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "stakers",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
+}
